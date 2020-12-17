@@ -33,6 +33,129 @@
 	justify-content: center;
 	align-items: center;
 }
+
+
+
+.active {
+	position: fixed;
+}
+ .nav__panel.active {
+	display: block;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,0.5);
+}
+ .active li {
+ 	position: relative;
+ 	top: 30%;
+ 	text-align: center;
+ 	padding-bottom:  50px;
+ }
+.active li a {
+	font-size: 30px;
+	text-align: center;
+}
+.active li span {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header__burger {
+	display: block;
+	width: 40px;
+	height: 20px;
+	margin-right: 20px;
+	position: relative;
+	right: 20px;
+	z-index: 3;
+}
+.header__burger span {
+	display: block;
+	width: 30px;
+	height: 2px;
+	background: red;
+	position: absolute;
+	top: 15px;
+	z-index: 3;
+}
+.header__burger span:before {
+	content: ' ';
+	width: 30px;
+	height: 2px;
+	background: red;
+	position: absolute;
+	bottom: 10px;
+	transition: 0.2s;
+}
+.header__burger span:after {
+	content: ' ';
+	width: 30px;
+	height: 2px;
+	background: red;
+	position: absolute;
+	top: 10px;
+	transition: 0.2s;
+}
+.active span {
+	height: 0;
+	position: fixed;
+	margin-top: 40px;
+}
+.active span:before {
+	transform: rotate(50deg);
+	bottom: 0;
+	
+}
+.active span:after {
+	transform: rotate(-50deg);
+	top: 0;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 @media screen and (max-width: 950px) {
 	.section__column__item {
