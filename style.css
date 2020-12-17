@@ -8,6 +8,9 @@ a {
 	font-size: 18px;
 	font-weight: 700;
 }
+.fa {
+	z-index: 1;
+}
 .h1 {
 	font-family: 'Bebas Neue', cursive;
 	font-weight: 400;
